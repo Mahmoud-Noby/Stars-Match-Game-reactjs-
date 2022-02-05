@@ -1,4 +1,3 @@
-
 import './App.css';
 
 const Numbers = props => {
@@ -8,14 +7,14 @@ const Numbers = props => {
     wrong: 'lightcoral',
     candidate: 'deepskyblue',
   };
-return (
-  <button 
-  className="number"  
-  style={{ backgroundColor: colors[props.status] }}
-  key={props.number} 
-  onClick={ (e) => props.onNumClicked(props.number, props.status ) } > 
-  {props.number}
-  </button>
-)
+  return (
+    <button
+      className="number"
+      style={{ backgroundColor: colors[props.status] }}
+      key={props.number}
+      onClick={(e) => props.onNumClicked(props.number, props.status)} >
+      {props.number}
+    </button>
+  )
 }
 export default Numbers;

@@ -1,9 +1,5 @@
-
-
-
 const ResetButton = props => {
-  return(
-
+  return (
     <div className="game-done">
       <div className="message" style={{ color: props.gameStatus === 'lost' ? 'red' : 'green' }}>
         {props.gameStatus === 'lost' ? 'Game Over' : 'Nice'}
